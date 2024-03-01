@@ -66,6 +66,10 @@ fn HomePage() -> impl IntoView {
 
 #[component]
 fn ErrorPage() -> impl IntoView {
+    //error page for error
+    //if something goes wrong this will happen
+    //implement something IntoView trait
+    //intoview output component into rendered html
     let params = use_params_map();
     let p_unknown = move || params.with(|p| p.get("else").cloned().unwrap_or_default());
 
